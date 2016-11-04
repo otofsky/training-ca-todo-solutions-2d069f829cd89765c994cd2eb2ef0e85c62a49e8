@@ -1,0 +1,17 @@
+image: adesse-maintenance:android
+
+before_script:
+    - export GRADLE_USER_HOME=`pwd`/.gradle
+
+cache:
+  paths:
+     - .gradle/wrapper
+     - .gradle/caches
+
+stages:
+    - test
+
+test_job:
+    stage: test
+    script:
+        - ./gradlew clean check

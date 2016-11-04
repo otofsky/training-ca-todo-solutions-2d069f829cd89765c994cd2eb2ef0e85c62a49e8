@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CleanArchitectureTODO</string>
+    <string name="hint_message_content">Message content</string>
+    <string name="action_send">Send</string>
+</resources>
